@@ -1,27 +1,47 @@
 <!DOCTYPE html>
 <!-- Cole Rickards 2024 -->
 <html lang="en">
-<title>Coming Soon - Cole's Club</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="The offical website for Cole Rickards">
-<link rel="shortcut icon" href="colepfp.jpg" type="image/png">
 <head>
+    <meta charset="UTF-8">
+    <title>Coming Soon - Cole's Club</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The official website for Cole Rickards">
+    <link rel="shortcut icon" href="colepfp.jpg" type="image/png">
     <style>
         body {
             margin: 0;
             padding: 0;
             overflow: hidden;
             background-color: #cccccc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
         }
         
         img {
             width: 100%;
             height: 100%;
             object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+        
+        .coming-soon {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
         }
     </style>
 </head>
 <body>
     <img src="background.jpg" alt="Background Image">
+    <div class="coming-soon">
+        <h1>Coming Soon</h1>
+        <p>Stay tuned for updates!</p>
+    </div>
 </body>
 </html>
