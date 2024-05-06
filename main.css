@@ -24,7 +24,7 @@ img {
     position: absolute; 
     top: 45px;
     left: calc(70px + 250px + 75px);
-    background: linear-gradient(to right, #DEDEDE, #B5B5B5, #8C8C8C);
+    background: linear-gradient(to right, #FFFFFF, #CACACA, #7B7B7B);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
