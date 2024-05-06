@@ -3,48 +3,62 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Coming Soon - Cole's Club</title>
+    <title>Cole's Club</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="The official website for Cole Rickards, a fortnite content creator.">
     <link rel="shortcut icon" href="assets/favicon.webp" type="image/png">
     <link rel="preconnect" href="https://api.fonts.coollabs.io" crossorigin>
     <link href="https://api.fonts.coollabs.io/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            background-color: #00055e;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-        
-        img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            position: absolute;
-            top: 0;
-            left: 0;
-            z-index: -1;
-        }
-        
-        .coming-soon {
-            background-color: rgba(151, 151, 151, 0.8);
-            font-family: "Black Han Sans", sans-serif;
-            padding: 20px;
-            border-radius: 10px;
-            text-align: center;
-        }
-    </style>
+    <link href="https://api.fonts.coollabs.io/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <!-- not using google built in font API because the tracking is OFF THE CHARTS-->
+    <!-- #StopBeingWeirdGoogle -->
 </head>
+<!-- time for the fun stuff :) -->
 <body>
-    <img src="assets/background.webp" alt="Background Image, made by @TheCoolDoggo">
-    <div class="coming-soon">
-        <h1>Coming Soon</h1>
-        <p>Stay tuned for updates!</p>
+    <div class="pfp">
+        <a href="https://youtube.com/@colerickards?sub_confirmation=1">
+            <img src="assets/pfp.webp" alt="Profile Picture, made by @TheCoolDoggo">
+        </a>
     </div>
+    <img src="assets/background.webp" alt="Background Image, made by @TheCoolDoggo">
+    <div class="main-title">
+        <h1>Cole's Club</h1>
+    </div>
+    <div class="bio-text">
+        <h1>Gamer by day, Business student by night! My name is Cole, and when I'm not hitting the books at Open University (focusing on Business and Management), you'll likely find me live streaming gameplay of my favourite games. If you're looking for some interactive entertainment, maybe I'll catch you over on Twitch!</h1>
+    </div>
+    <iframe class="styled-frame" src="https://www.youtube.com/embed/videoseries?list=UCwRbXtOEap9MujINjmXJkPQ" width="600" height="440"></iframe>
+    <div id="mobilePopup" class="mobile-popup">
+        <!-- to be honest, a mobile version is NEVER coming.... -->
+        <p>This site is not optimized for mobile devices, and will be broken on them. Please visit <a href="https://linktr.ee/colesclub/">my Linktree</a> instead.</p>
+        <button onclick="closePopup()">Close to see mobile pain...</button>
+    </div>
+    <footer class="footer">
+        <a href="https://www.tiktok.com/@colesclub">
+            <img src="assets/tiktok.webp" alt="tiktok logo" width="56px"></a>
+        <a href="https://www.youtube.com/@colerickards">
+            <img src="assets/youtube.webp" alt="youtube logo" width="60px"></a>
+        <a href="https://www.twitch.tv/cole_rickards">
+            <img src="assets/twitch.webp" alt="twitch logo" width="48px"></a>
+        <a href="https://x.com/colerick_20">
+            <img src="assets/x.webp" alt="x/twitter logo" width="56px"></a>
+        <a href="https://discord.gg/zn4j6nU3XG">
+            <img src="assets/discord.webp" alt="discord logo" width="60px"></a>
+        <a href="https://github.com/cole-rickards">
+            <img src="assets/github.webp" alt="github logo" width="60px"></a>
+        <a href="mailto:businessinquiries@colesclub.studio">
+            <img src="assets/mail.webp" alt="mail logo" width="60px"></a>
+          <a href="https://github.com/thecooldoggo">
+            <img src="assets/dev.webp" alt="link logo" width="60px"></a>
+  </footer>
 </body>
+<script>
+    document.querySelector('button').addEventListener('click', closePopup);
+
+function closePopup() {
+    document.getElementById("mobilePopup").style.display = "none";
+}
+    </script>
 </html>
+<!-- coded with love from doggo. go out to the world and build something amazing :) -->
