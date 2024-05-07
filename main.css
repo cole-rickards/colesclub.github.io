@@ -23,7 +23,7 @@ img {
     color: #d9d9d9;
     position: absolute; 
     top: 45px;
-    left: calc(70px + 150px + 100px);
+    left: calc(70px + 150px + 70px);
     background: linear-gradient(to right, #FFFFFF, #CACACA, #7B7B7B);
     -webkit-background-clip: text;
     background-clip: text;
