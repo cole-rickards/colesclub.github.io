@@ -23,7 +23,7 @@ img {
     color: #d9d9d9;
     position: absolute; 
     top: 45px;
-    left: calc(70px + 300px + 70px);
+    left: calc(70px + 270px + 50px);
     background: linear-gradient(to right, #FFFFFF, #CACACA, #7B7B7B);
     -webkit-background-clip: text;
     background-clip: text;
@@ -154,7 +154,16 @@ img {
     transition: transform 0.3s ease-in-out;
     filter: invert(1);
   }
-  
+  .twitter-timeline {
+    position: absolute;
+    top: 65px;
+    left: 1086px;
+    width: 270px;
+    height: 350px;
+    border-radius: 20px;
+    overflow: hidden;
+    z-index: 5;
+}
   .footer img:hover {
     opacity: .88;
     transform: scale(1.2);
